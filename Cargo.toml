@@ -61,6 +61,7 @@ prost = "0.11"
 quote = "1.0"
 rand = "0.8"
 schemars = "0.8"
+semver = "1"
 serde = {version = "1.0", default-features = false, features = ["derive"]}
 serde_json = "1.0"
 serde_yaml = "0.9"
@@ -78,6 +79,8 @@ wynd-utils = "0.4"
 # optional owner.
 cw-ownable = "0.5"
 
+dao-cw20 = {path = "./packages/cw20", version = "*"}
+cw20-token = {path = "./contracts/external/cw20-token", version = "*"}
 cw-admin-factory = {path = "./contracts/external/cw-admin-factory", version = "2.3.0"}
 cw-denom = {path = "./packages/cw-denom", version = "2.3.0"}
 cw-hooks = {path = "./packages/cw-hooks", version = "2.3.0"}
